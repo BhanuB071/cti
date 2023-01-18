@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<main class="container">
+    <div class="container text-center">
+        <form class="form-signin mt-5" method="post" action="/add">
+            <input type="text" id="name" name="name" class="form-control mb-2 text-sm" placeholder="Full Name" required="" autofocus="">
+            <input type="text" id="course" name="course" class="form-control mb-2 text-md" placeholder="Course" required="">
+            <input type="text" id="grade" name="grade" class="form-control mb-2" placeholder="Grade" required="">
+            <button class="btn btn-sm btn-primary btn-block" type="submit">Add new record</button>
+        </form>
+    </div>
+</main>
+
+{% endblock %}
+
+
